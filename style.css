@@ -1,0 +1,61 @@
+@keyframes slideright {
+  from {
+    background-position: 70000%;
+  }
+  to {
+    background-position: 0%;
+  }
+}
+
+@keyframes slideleft {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 70000%;
+  }
+}
+
+#bg {
+  position: absolute;
+  background-image: url("bg.png");
+  height: 250px;
+  width: 1000px;
+  animation: slideleft 1500s infinite linear;
+}
+
+.bob {
+  background-image: url("aBob.png");
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+}
+
+.obstacle {
+  background-image: url("js.png");
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+}
+
+#alert {
+  background-color: #fbf1ef;
+  width: fit-content;
+  color: #eb4a3b;
+  font-family: monospace;
+  padding: 10px;
+  border: 1px solid #eb4a3b;
+  font-size: small;
+  display: none;
+}
+
+#score {
+  position: absolute;
+  top: 0;
+  right: 500px;
+  font-family: monospace;
+  color: #eb4a3b;
+  font-size: small;
+}
