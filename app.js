@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
         clearInterval(timerId)
         grid.removeChild(obstacle)
         score++
-        scoreDisplay.innerHTML = "Score: " + score
+        scoreDisplay.innerHTML = "Skill points: " + score
       }
     }, 20)
 
@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (e.code === "Space") {
       document.removeEventListener("keyup", restartGame)
       score = 0
-      scoreDisplay.innerHTML = "Score: " + score
+      scoreDisplay.innerHTML = "Skill points: " + score
       resetGame()
     }
   }
@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initial start prompt
   alert.innerHTML = "Press Space to Start"
   alert.style.display = "block"
-  scoreDisplay.innerHTML = "Score: " + score
+  scoreDisplay.innerHTML = "Skill points: " + score
 
   // Start game on space press
   document.addEventListener("keyup", function startGame(e) {
